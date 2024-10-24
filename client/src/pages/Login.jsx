@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await axios.post(
-      "http://localhost:3000/api/auth/login",
+      "http://localhost:5000/api/auth/login",
       formData
     );
     if (res.status === 200) {

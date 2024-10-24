@@ -24,7 +24,7 @@ const AddProduct = () => {
     const { productName, description, price, category } = formData;
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/product/addproduct",
+        "http://localhost:5000/api/product/addproduct",
         formData
       );
       if (res.status === 201) {

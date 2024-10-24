@@ -4,7 +4,7 @@ function CartList() {
   const [cart, setCart] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.post("http://localhost:3000/api/product/addcart");
+      const res = await axios.post("http://localhost:5000/api/product/addcart");
       setCart(res.data);
     };
     fetchData();

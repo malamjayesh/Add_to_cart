@@ -7,7 +7,7 @@ function ProductList() {
     const fetchdata = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3000/api/product/getproduct"
+          "http://localhost:5000/api/product/getproduct"
         );
         setProduct(res.data.Allproductlist);
         console.log(res.data);
